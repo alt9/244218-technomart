@@ -12,8 +12,9 @@
 	    </div>
 		<div class="search">
 		  <form>
-            <p><input type="search" placeholder="Поиск:"></p>
-          </form>
+		    <input type="text" placeholder="Поиск:">
+			<button type="submit" hidden="hidden"></button>
+		  </form>
 		</div>
 		<div class="bookmark">
 		  <span>Закладки: 0</span>
@@ -75,12 +76,16 @@
 	</header>
 	
 	<div class="widget">
-	  <div class="widget1">
+	  <div class="widget-item-materials">
 	    <span>Материалы</span>
 		<img src="img/icon1.png" width="" height="" alt="Материалы">
 		<a class="btn-widget" href="#">На любой вкус</a>
+		</div>
+		<div class="flag">
+		  new
+		</div>
 	  </div>
-	  <div class="widget2">
+	  <div class="widget-item-tool">
 	    <span>Инструмент</span>
 		<img src="img/icon2.png" width="" height="" alt="Инструмент">
 		<a class="btn-widget" href="#">На все случаи</a>
@@ -88,99 +93,105 @@
 	  
 	  <div class="slider">
 	    <img src="img/slider1.jpg" width="" height="" alt="Перфораторы">
+		<button type="button" class="sliderbtn-left"></button>
+		<button type="button" class="sliderbtn-right"></button>
 		<a class="btn-slider" href="#">Открыть каталог</a>
 	  </div>
 	  
-	  <div class="widget3">
+	  <div class="widget-item-technic">
 	    <span>Техника</span>
 		<img src="img/icon3.png" width="" height="" alt="Техника">
 		<a class="btn-widget" href="#">Для стройки</a>
 	  </div>
-	  <div class="widget4">
+	  <div class="widget-item-discount">
 	    <span>Скидки 50%</span>
 		<img src="img/icon4.png" width="" height="" alt="Скидки 50%">
 		<a class="btn-widget" href="#">На 350 товаров</a>
 	  </div>
-	  <div class="widget5">
+	  <div class="widget-item-shipping">
 	    <span>Доставка</span>
 		<img src="img/icon5.png" width="" height="" alt="Доставка">
 		<a class="btn-widget" href="#">Бесплатно</a>
 	  </div>
 	</div>
 	
-	<div class="popular-block">
-	  <span class="main-title">ПОПУЛЯРНЫЕ ТОВАРЫ:</span>
-	  <a class="btn-popular" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+	<div class="popular-products-block">
+	  <div class="popular-title">
+	    <span class="main-title">ПОПУЛЯРНЫЕ ТОВАРЫ:</span>
+	    <a class="btn-popular" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+	  </div>
+	  <div class="showcase">
+	    <article class="product-item">
+	      <img src="img/bosch-bfg-9000.png" width="" height="" alt="Перфоратор Bosch BFG 9000">
+	      <span class="product-title">Перфоратор BOSCH BFG 9000</span>
+	      <div class="price">
+		    <span class="old-price">32500 Р.</span>
+		    <span class="red-price">25500 Р.</span>
+		  </div>
+	    </article>
+	    <article class="product-item">
+	      <img src="img/bosch-bfg-3000.png" width="" height="" alt="Перфоратор Bosch BFG 3000">
+	      <span class="product-title">Перфоратор BOSCH BFG 3000</span>
+	      <div class="price">
+		    <span class="old-price">22500 Р.</span>
+		    <span class="red-price">15500 Р.</span>
+		  </div>
+	   </article>
+	    <article class="product-item">
+	      <img src="img/bosch-bfg-6000.png" width="" height="" alt="Перфоратор Bosch BFG 6000">
+	      <span class="product-title">Перфоратор BOSCH BFG 6000</span>
+	      <div class="price">
+		    <span class="old-price">30500 Р.</span>
+		    <span class="red-price">25500 Р.</span>
+		  </div>
+	    </article>
+	    <article class="product-item">
+	      <img src="img/bosch-bfg-2000.png" width="" height="" alt="Перфоратор Bosch BFG 2000">
+	      <span class="product-title">Перфоратор BOSCH BFG 2000</span>
+	      <div class="price">
+		    <span class="old-price" hidden="hidden">-</span>
+		    <span class="red-price">12500 Р.</span>
+		  </div>
+		  <div class="flag">
+		    new
+		  </div>
+	    </article>
+	  </div>
 	</div>
 	
-	<div class="showcase">
-	  <article class="product-item">
-	    <img src="img/bosch-bfg-9000.png" width="" height="" alt="Перфоратор Bosch BFG 9000">
-	    <span class="product-title">Перфоратор BOSCH BFG 9000</span>
-	    <span class="old-price">32500 Р.</span>
-	    <div class="red-price">
-		  25500 Р.
-		</div>
-	  </article>
-	  <article class="product-item">
-	    <img src="img/bosch-bfg-3000.png" width="" height="" alt="Перфоратор Bosch BFG 3000">
-	    <span class="product-title">Перфоратор BOSCH BFG 3000</span>
-	    <span class="old-price">22500 Р.</span>
-	    <div class="red-price">
-		  15500 Р.
-		</div>
-	  </article>
-	  <article class="product-item">
-	    <img src="img/bosch-bfg-6000.png" width="" height="" alt="Перфоратор Bosch BFG 6000">
-	    <span class="product-title">Перфоратор BOSCH BFG 6000</span>
-	    <span class="old-price">30500 Р.</span>
-	    <div class="red-price">
-		  25500 Р.
-		</div>
-	  </article>
-	  <article class="product-item">
-	    <img src="img/bosch-bfg-2000.png" width="" height="" alt="Перфоратор Bosch BFG 2000">
-	    <span class="product-title">Перфоратор BOSCH BFG 2000</span>
-	    <span class="old-price" hidden="hidden">-</span>
-	    <div class="red-price">
-		  12500 Р.
-		</div>
-		<div class="flag">
-		  new
-		</div>
-	  </article>
+	<div class="popular-plants-block">
+	  <div class="popular-title">
+	    <span class="main-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</span>
+	    <a class="btn-popular" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+	  </div>
+	  <div class="plants">
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-bosch.png" width="" height="" alt="Bosch"></a>
+	    </div>
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-makita.png" width="" height="" alt="Makita"></a>
+	    </div>
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-dewalt.png" width="" height="" alt="DeWalt"></a>
+	    </div>
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-interskol.png" width="" height="" alt="Интерскол"></a>
+	    </div>
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-hitachi.png" width="" height="" alt="Hitachi"></a>
+	    </div>
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-lg.png" width="" height="" alt="LG"></a>
+	    </div>
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-aeg.png" width="" height="" alt="AEG"></a>
+	    </div>
+	    <div class="plant">
+	      <a href="#" target="_blank"><img src="img/p-metabo.png" width="" height="" alt="Metabo"></a>
+	    </div>
+	  </div>
 	</div>
 	
-	<div class="popular-block">
-	  <span class="main-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</span>
-	  <a class="btn-popular" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-	</div>
-	<div class="plants">
-	  <div class="plant">
-	    <img src="img/p-bosch.png" width="" height="" alt="Bosch">
-	  </div>
-	  <div class="plant">
-	    <img src="img/p-makita.png" width="" height="" alt="Makita">
-	  </div>
-	  <div class="plant">
-	    <img src="img/p-dewalt.png" width="" height="" alt="DeWalt">
-	  </div>
-	  <div class="plant">
-	    <img src="img/p-interskol.png" width="" height="" alt="Интерскол">
-	  </div>
-	  <div class="plant">
-	    <img src="img/p-hitachi.png" width="" height="" alt="Hitachi">
-	  </div>
-	  <div class="plant">
-	    <img src="img/p-lg.png" width="" height="" alt="LG">
-	  </div>
-	  <div class="plant">
-	    <img src="img/p-aeg.png" width="" height="" alt="AEG">
-	  </div>
-	  <div class="plant">
-	    <img src="img/p-metabo.png" width="" height="" alt="Metabo">
-	  </div>
-	</div>
 	<div class="services">
 	  <div class="services-descr">
 	    <span class="main-title">СЕРВИСЫ</span>
@@ -216,6 +227,7 @@
 		</div>
 	  </div>
 	</div>
+	
 	<div class="main-company">
 	  <div class="main-company-descr">
 	    <span class="main-title">&#171;КОМПАНИЯ ТЕХНОМАРТ&#187;</span>
@@ -227,11 +239,17 @@
 		  Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 		  Техномарт работает со многими транспортными компаниями:
 		</p>
-		<p class="transport">
-		  Деловые линии<br>
-		  Автотрейдинг<br>
-		  ЖелДорЭкспедиция
-		</p>
+		<ul class="transport">
+		  <li>
+		    Деловые линии
+		  </li>
+		  <li>
+		    Автотрейдинг
+		  </li>
+		  <li>
+		    ЖелДорЭкспедиция
+		  </li>
+		</ul>
 		<a class="btn-about-company" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
 	  </div>
 	  <div class="main-company-contacts">
@@ -240,7 +258,7 @@
 		  Вы можете забрать товар сами,<br>
 		  заехав в наш офис:
 		</p>
-		<img src="img/map.png" width="" height="" alt="Расположение компании">
+		<a href="#" target="_blank"><img src="img/map.png" width="" height="" alt="Расположение компании"></a>
 	    <a class="btn-popular" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
 	  </div>
 	</div>
