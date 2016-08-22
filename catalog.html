@@ -6,8 +6,9 @@
     <title>Интернет-магазин Техномарт</title>
   </head>
   <body>
-    <header class="main-header">
-	  <div class="header-1line">
+    
+	<header class="main-header">
+	  <div class="header-top-line">
 	    <div class="logo">
 	      <a href="#"><img src="img/logo.png" width="" height="" alt="Техномарт"></a>
 	    </div>
@@ -27,7 +28,7 @@
 		  <a class="btn-order" href="#">Оформить заказ</a>
 		</div>
 	  </div>
-	  <div class="header-2line">
+	  <div class="header-low-line">
 	    <div class="slogan">
 		  <p>Интернет-магазин<br>
 		  строительных материалов<br>
@@ -81,10 +82,10 @@
 	</header>
 	
 	<div class="breadcrumbs">
-	    <a class="breadcrumbs" href="#">ГЛАВНАЯ</a>
-		<a class="breadcrumbs" href="#">КАТАЛОГ</a>
-		<a class="breadcrumbs" href="#">ИНСТРУМЕНТ</a>
-		<span class="breadcrumbs" >ПЕРФОРАТОРЫ</span>
+	    <a class="breadcrumbs-item" href="#">ГЛАВНАЯ</a>
+		<a class="breadcrumbs-item" href="#">КАТАЛОГ</a>
+		<a class="breadcrumbs-item" href="#">ИНСТРУМЕНТ</a>
+		<span class="breadcrumbs-item" >ПЕРФОРАТОРЫ</span>
 	</div>
 	<div class="catalog-title">
 	  <h1>ПЕРФОРАТОРЫ</h1>
@@ -93,7 +94,7 @@
 	<div class="catalog-body">
 	  <div class="filter">
 	    <div class="filter-title">
-	      <span class="breadcrumbs">ФИЛЬТР:</span>
+	      <span class="filter-title-text">ФИЛЬТР:</span>
 	    </div>
 	    <form>
 	      <div class="product-choice">
@@ -102,7 +103,7 @@
 	      <section class="min-max-price">
 	        <input type="range" min="0">
             <input type="range" max="30000">
-	     </section>
+	      </section>
 	      <section class="price-dial-min">
 	        <input type="text">
 	      </section>
@@ -122,7 +123,7 @@
 	      <section>
 	        <h2>ПИТАНИЕ:</h2>
 		    <p><input type="radio" name="net" id="r1"><label for="r1">АККУМУЛЯТОРНЫЕ</label></p>
-	       <p><input type="radio" name="net" id="r2"><label for="r2">СЕТЕВЫЕ</label></p>
+	        <p><input type="radio" name="net" id="r2"><label for="r2">СЕТЕВЫЕ</label></p>
 	      </section>
 		  <button type="submit" class="check-product">Показать</button>
 	    </form>
@@ -130,15 +131,15 @@
 	
 	  <div class="products">
 	    <div class="sort">
-	    <span class="breadcrumbs">СОРТИРОВКА:</span>
+	    <span class="sort-title-text">СОРТИРОВКА:</span>
 	      <section>
 		    <span class="sort-on-type">ПО ЦЕНЕ</span>
 		    <a class="sort-on-type" href="#">ПО ТИПУ</a>
 		    <a class="sort-on-type" href="#">ПО ФУНКЦИОНАЛУ</a>
 	      </section>
 		  <section>
-		    <a class="sort-low" hidden="hidden" href="#">low</a>
-		    <span class="sort-top" hidden="hidden">top</span>
+		    <a class="sort-low" href="#">low</a>
+		    <span class="sort-top">top</span>
 		  </section>
 	    </div>
 	  
@@ -293,9 +294,9 @@
 	</div>
 	
 	<footer class="main-footer">
-	  <div class="footer-1line clearfix">
+	  <div class="footer-top-line clearfix">
 	    <img src="img/logo1.png" width="" height="" alt="Техномарт">
-		<div class="footer-navigation1">
+		<div class="footer-navigation-top">
 		    <ul>
               <li>
                 <a href="#">Компания</a>
@@ -315,14 +316,14 @@
 			</ul>
 		</div>
 	  </div>
-	  <div class="footer-2line clearfix">
+	  <div class="footer-middle-line clearfix">
 		<div class="footer-adress">
 		  <p class="footer-adress-text">
 		    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 			+7 (812) 555-05-55
 		  </p>
 		</div>
-		<div class="footer-navigation2">
+		<div class="footer-navigation-low">
 		  <ul>
             <li>
               <a href="#">Материалы</a>
@@ -339,7 +340,7 @@
 		  </ul>
 		</div>
 	  </div>
-	  <div class="footer-3line clearfix">
+	  <div class="footer-low-line clearfix">
 	    <div class="footer-copyright">
           <p class="footer-text">
 		    &#169; 2010-2016 Компания &#171;Техномарт&#187;<br>
