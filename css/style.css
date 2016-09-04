@@ -118,7 +118,7 @@ h2 {
 	width: 16px;
 	height: 16px;
 	background: url("../img/icon-sprite.png") no-repeat;
-	background-position: -27px -0px;
+	background-position: -37px -0px;
 	opacity: 0.3;
 }
 .bookmark span:hover::before {
@@ -230,7 +230,7 @@ h2 {
 	width: 19px;
 	height: 19px;
 	background: url("../img/icon-sprite.png") no-repeat;
-	background-position: -364px -0px;
+	background-position: -494px -0px;
 }
 .address {
 	width: 270px;
@@ -284,7 +284,7 @@ h2 {
 	width: 20px;
 	height: 17px;
 	background: url("../img/icon-sprite.png") no-repeat;
-	background-position: -303px -0px;
+	background-position: -413px -0px;
 	opacity: 0.3;
 }
 .login-a:hover::before {
@@ -971,20 +971,75 @@ h2 {
 	margin-right: 130px;
 	margin-top: 39px;
 }
+.footer-link {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffd180;
+	text-decoration: none;
+}
+.footer-link:hover {
+	text-decoration: underline;
+}
+.footer-link:active {
+	color: #ee3643;
+}
 
 .breadcrumbs {
 	height: 59px;
 	width: 1200px;
 	margin: auto;
-	background-color: brown;
+	font-size: 0;
+	
+	position: relative;
 }
 .breadcrumbs a:first-child {
-	margin-left: 130px;
+	margin-left: 198px;
+}
+.breadcrumbs::before {
+	content: "";
+	position: absolute;
+	top: 24px;
+	left: 130px;
+	
+	width: 15px;
+	height: 12px;
+	background: url("../img/icon-sprite.png") no-repeat;
+	background-position: -341px -0px;
+}
+.breadcrumbs-item {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 24px;
+	margin-left: 40px;
+	font-family: ptsans, Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-decoration: none;
+	
+	position: relative;
+}
+.breadcrumbs-item::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: -22px;
+	
+	width: 8px;
+	height: 12px;
+	background: url("../img/icon-sprite.png") no-repeat;
+	background-position: -533px -0px;
 }
 .catalog-title {
 	height: 89px;
+	margin-left: 130px;
+	margin-right: 130px;
 	margin-bottom: 20px;
 	background-color: #f2f6f8;
+}
+.catalog-title h1 {
+	padding-top: 30px;
+	padding-left: 30px;
+	color: #32425c;
 }
 .catalog-body {
 	height: 1202px;
@@ -998,8 +1053,49 @@ h2 {
 }
 .filter-title {
 	height: 38px;
+	border-radius: 3px;
 	background-color: #f7f3ec;
 }
+.filter-title span {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 19px;
+	margin-top: 11px;
+	font-family: ptsans, Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+.min-max-price {
+	width: 220px;
+	height: 80px;
+	background-color: #f7f3ec;
+	
+	position: relative;
+}
+.min-max-price::before {
+	content: "";
+	position: absolute;
+	top: 39px;
+	left: 20px;
+	
+	width: 180px;
+	height: 2px;
+	background: #d7dcde;
+	z-index: 10;
+}
+.min-max-price::before {
+	content: "";
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background: #ffffff;
+	z-index: 20;
+}
+
 .products {
 	font-size: 0;
 	float: right;
@@ -1012,6 +1108,7 @@ h2 {
 	width: 700px;
 	height: 38px;
 	margin-bottom: 20px;
+	border-radius: 3px;
 	background-color: #f7f3ec;
 }
 .product-item-catalog {
