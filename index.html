@@ -2,19 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic-ext" rel="stylesheet"> 
     <title>Интернет-магазин Техномарт</title>
   </head>
   <body>
     
 	<header class="main-header">
 	  <div class="header-top-line clearfix">
-	    <div class="logo">
-	      <a href="#"><img src="img/logo.png" width="" height="" alt="Техномарт"></a>
-	    </div>
+	    <div class="logo-wrapper">
+		  <div class="logo">
+	        <div class="logo-basic">
+			  <a href="#">ТЕХНОМАРТ</a>
+			</div>
+			<div class="logo-line">
+			</div>
+	      </div>
+		</div>
 		<div class="search">
 		  <form>
-		    <input type="text" placeholder="Поиск:">
+		    <input type="text" placeholder="Поиск:" required>
 			<button type="submit" hidden="hidden"></button>
 		  </form>
 		</div>
@@ -43,9 +52,13 @@
 			<span class="main-descr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 	      </div>
 		</div>
-		<div class="user-block">
-          <a class="login" href="#">Вход</a>
-		  <a class="reg" href="#">Регистрация</a>
+		<div class="user-block clearfix">
+		  <div class="login">
+            <a class="login-a" href="#">Войти</a>
+	      </div>
+		  <div class="reg">
+		    <a class="reg-a" href="#">Регистрация</a>
+		  </div>
         </div>
 	  </div>
 	  
@@ -78,38 +91,79 @@
 	</header>
 	
 	<div class="widget clearfix">
-	  <div class="widget-item widget-item-materials item-flag-new">
-	    <span>Материалы</span>
-		<img src="img/icon1.png" width="44" height="65" alt="Материалы">
-		<a class="btn-widget" href="#">На любой вкус</a>
+	  <div class="widget-item widget-item-materials clearfix item-flag-new">
+	    <div class="widget-item-text-btn">
+	      <span class="widget-item-text">Материалы</span>
+		  <div class="btn-widget-wrapper">
+		    <a class="btn-widget" href="#">На любой вкус</a>
+		  </div>
+		</div>
+		<div class="widget-item-image">
+		  <img src="img/icon1.png" width="44" height="65" alt="Материалы">
+		</div>
 	  </div>
-	  <div class="widget-item widget-item-tool">
-	    <span>Инструмент</span>
-		<img src="img/icon2.png" width="75" height="61" alt="Инструмент">
-		<a class="btn-widget" href="#">На все случаи</a>
+	  <div class="widget-item widget-item-tool clearfix">
+	    <div class="widget-item-text-btn">
+	      <span class="widget-item-text">Инструмент</span>
+		  <div class="btn-widget-wrapper">
+		    <a class="btn-widget" href="#">На все случаи</a>
+		  </div>
+		</div>
+		<div class="widget-item-image">
+		  <img src="img/icon2.png" width="75" height="61" alt="Материалы">
+		</div>
 	  </div>
-	  <div class="widget-item widget-item-technic">
-	    <span>Техника</span>
-		<img src="img/icon3.png" width="78" height="62" alt="Техника">
-		<a class="btn-widget" href="#">Для стройки</a>
+	  <div class="widget-item widget-item-technic clearfix">
+	    <div class="widget-item-text-btn">
+	      <span class="widget-item-text">Техника</span>
+		  <div class="btn-widget-wrapper">
+		    <a class="btn-widget" href="#">Для стройки</a>
+		  </div>
+		</div>
+		<div class="widget-item-image">
+		  <img src="img/icon3.png" width="78" height="62" alt="Материалы">
+		</div>
 	  </div>
 	  
 	  <div class="slider">
 	    <img src="img/slider1.jpg" width="620" height="266" alt="Перфораторы">
+		<img src="img/slider2.jpg" width="620" height="266" alt="Дрели" hidden="hidden">
+		<span class="slider-title">ПЕРФОРАТОРЫ</span>
+		<span class="slider-text">Настоящие мужские игрушки</span>
+		<span class="slider-title" hidden="hidden">ДРЕЛИ</span>
+		<span class="slider-text" hidden="hidden">Соседям на радость</span>
 		<button type="button" class="sliderbtn-left"></button>
 		<button type="button" class="sliderbtn-right"></button>
+		<div class="slider-dot-left">
+		  <div class="slider-indicator">
+		  </div>
+		</div>
+		<div class="slider-dot-right">
+		</div>
 		<a class="btn-slider" href="#">Открыть каталог</a>
 	  </div>
 	  
-	  <div class="widget-item widget-item-discount">
-	    <span>Скидки 50%</span>
-		<img src="img/icon4.png" width="59" height="72" alt="Скидки 50%">
-		<a class="btn-widget" href="#">На 350 товаров</a>
+	  <div class="widget-item widget-item-discount clearfix">
+	    <div class="widget-item-text-btn">
+	      <span class="widget-item-text">Скидки 50%</span>
+		  <div class="btn-widget-wrapper">
+		    <a class="btn-widget" href="#">На 350 товаров</a>
+		  </div>
+		</div>
+		<div class="widget-item-image">
+		  <img src="img/icon4.png" width="59" height="72" alt="Материалы">
+		</div>
 	  </div>
-	  <div class="widget-item widget-item-shipping">
-	    <span>Доставка</span>
-		<img src="img/icon5.png" width="78" height="63" alt="Доставка">
-		<a class="btn-widget" href="#">Бесплатно</a>
+	  <div class="widget-item widget-item-shipping clearfix">
+	    <div class="widget-item-text-btn">
+	      <span class="widget-item-text">Доставка</span>
+		  <div class="btn-widget-wrapper">
+		    <a class="btn-widget" href="#">Бесплатно</a>
+		  </div>
+		</div>
+		<div class="widget-item-image">
+		  <img src="img/icon5.png" width="78" height="63" alt="Материалы">
+		</div>
 	  </div>
 	</div>
 	
@@ -120,44 +174,60 @@
 	  </div>
 	  <div class="showcase clearfix">
 	    <article class="product-item">
-	      <img src="img/bosch-bfg-9000.jpg" width="220" height="180" alt="Перфоратор Bosch BFG 9000">
+	      <div class="product-image">
+		    <img src="img/bosch-bfg-9000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 9000">
+		  </div>
 	      <span class="product-title">Перфоратор BOSCH BFG 9000</span>
-	      <div class="price">
-		    <span class="old-price">32500 Р.</span>
-		    <span class="red-price">25500 Р.</span>
+	      <div class="old-price">32500 Р.</div>
+		  <div class="red-price">25500 Р.</div>
+		  <div class="buy-block">
+		    <a class="btn-buy" href="#">КУПИТЬ</a>
+		    <a class="btn-to-bookmark" href="#">В ЗАКЛАДКИ</a>
 		  </div>
 	    </article>
 	    <article class="product-item">
-	      <img src="img/bosch-bfg-3000.jpg" width="220" height="180" alt="Перфоратор Bosch BFG 3000">
-	      <span class="product-title">Перфоратор BOSCH BFG 3000</span>
-	      <div class="price">
-		    <span class="old-price">22500 Р.</span>
-		    <span class="red-price">15500 Р.</span>
+	      <div class="product-image">
+		    <img src="img/bosch-bfg-3000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 3000">
 		  </div>
-	   </article>
+	      <span class="product-title">Перфоратор BOSCH BFG 3000</span>
+	      <div class="old-price">22500 Р.</div>
+		  <div class="red-price">15500 Р.</div>
+		  <div class="buy-block">
+		    <a class="btn-buy" href="#">КУПИТЬ</a>
+		    <a class="btn-to-bookmark" href="#">В ЗАКЛАДКИ</a>
+		  </div>
+	    </article>
 	    <article class="product-item">
-	      <img src="img/bosch-bfg-6000.jpg" width="220" height="180" alt="Перфоратор Bosch BFG 6000">
+	      <div class="product-image">
+		    <img src="img/bosch-bfg-6000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 6000">
+		  </div>
 	      <span class="product-title">Перфоратор BOSCH BFG 6000</span>
-	      <div class="price">
-		    <span class="old-price">30500 Р.</span>
-		    <span class="red-price">25500 Р.</span>
+	      <div class="old-price">30500 Р.</div>
+		  <div class="red-price">25500 Р.</div>
+		  <div class="buy-block">
+		    <a class="btn-buy" href="#">КУПИТЬ</a>
+		    <a class="btn-to-bookmark" href="#">В ЗАКЛАДКИ</a>
 		  </div>
 	    </article>
 	    <article class="product-item item-flag-new">
-	      <img src="img/bosch-bfg-2000.jpg" width="220" height="180" alt="Перфоратор Bosch BFG 2000">
+	      <div class="product-image">
+		    <img src="img/bosch-bfg-2000.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 2000">
+		  </div>
 	      <span class="product-title">Перфоратор BOSCH BFG 2000</span>
-	      <div class="price">
-		    <span class="old-price" hidden="hidden">-</span>
-		    <span class="red-price">12500 Р.</span>
+	      <div class="old-price"></div>
+		  <div class="red-price">12500 Р.</div>
+		  <div class="buy-block">
+		    <a class="btn-buy" href="#">КУПИТЬ</a>
+		    <a class="btn-to-bookmark" href="#">В ЗАКЛАДКИ</a>
 		  </div>
 	    </article>
 	  </div>
 	</div>
 	
 	<div class="popular-plants-block">
-	  <div class="popular-title">
+	  <div class="popular-title-plants">
 	    <h1>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h1>
-	    <a class="btn-popular" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+	    <a class="btn-popular-plants" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
 	  </div>
 	  <div class="plants clearfix">
 	    <div class="plant">
@@ -208,7 +278,6 @@
               <button type="button" class="btn-service">Кредит</button>
             </li>
 		  </ul>
-	      <img src="img/vertical-shadow.png" width="10" height="272" alt="Service">
 		</div>
 		<div class="service-items-item">
 		  <span class="main-service">ДОСТАВКА</span>
@@ -254,13 +323,13 @@
 		  заехав в наш офис:
 		</p>
 		<a href="#" target="_blank"><img src="img/map.jpg" width="300" height="158" alt="Расположение компании"></a>
-	    <a class="btn-popular" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+	    <a class="btn-if-lost" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
 	  </div>
 	</div>
 	
 	<footer class="main-footer">
 	  <div class="footer-top-line clearfix">
-	    <img src="img/logo1.png" width="" height="" alt="Техномарт">
+	    <a href="#"><img src="img/logo1.jpg" width="220" height="68" alt="Техномарт"></a>
 		<div class="footer-navigation-top">
 		    <ul>
               <li>
@@ -319,11 +388,11 @@
 		</div>
 		<div class="footer-mail">
 		  <span class="footer-text">Обратная связь:</span>
-		  <a class="footer-text2" href="mailto:mail@htmlacademy.ru"></a>
+		  <span class="footer-link">mail@htmlacademy.ru</span>
 		</div>
 		<div class="footer-web">
 		  <span class="footer-text">Разработано -</span>
-		  <a class="footer-text2" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
+		  <a class="footer-link" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
 		</div>
 	  </div>
 	</footer>
