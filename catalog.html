@@ -23,7 +23,7 @@
 		</div>
 		<div class="search">
 		  <form>
-		    <input type="text" placeholder="Поиск:" required>
+		    <input type="text" placeholder="Поиск:" class="search-text" required>
 			<button type="submit" hidden="hidden"></button>
 		  </form>
 		</div>
@@ -31,10 +31,10 @@
 		  <span>Закладки: 0</span>
 		</div>
 		<div class="cart">
-		  <span>Корзина: 10</span>
+		  <span class="add-product">Корзина: 10</span>
 		</div>
 		<div class="order-btn">
-		  <a class="btn-order" href="#">Оформить заказ</a>
+		  <a href="#">Оформить заказ</a>
 		</div>
 	  </div>
 	  <div class="header-low-line">
@@ -49,17 +49,17 @@
 			<span>+7 (812) 555-05-55</span>
 	      </div>
 		  <div class="address">
-			<span class="main-descr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+			<span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 	      </div>
 		</div>
-		<div class="user-block">
-          <div class="user-logged">
-		    <span class="user">Равшан Джамшутович</span>
-			<a class="user-exit" href="#"></a>
-		  </div>
-		  <a class="cab" href="#">Мои заказы</a>
-		  <a class="cab" href="#">Личный кабинет</a>
+		<div class="user-block logged">
+		  <span class="user">Равшан Джамшутович</span>
+		  <a class="user-exit" href="#"></a>
         </div>
+		<div class="cab">
+		  <a href="#">Мои заказы</a>
+		  <a href="#">Личный кабинет</a>
+		</div>
 	  </div>
 	  
 	  <nav class="main-navigation">
@@ -108,46 +108,63 @@
 	      <div class="product-choice">
 	        <h2>ЦЕНА:</h2>
 	      </div>
-	      <section class="min-max-price">
-	        <!--тут js включает бегунок-->
-	      </section>
-	      <section class="price-dial-min">
-	        <input type="text">
-	      </section>
-	      <section class="price-dial-max">
-	        <input type="text">
-	      </section>
+		  <div class="range-filter">
+	        <!--тут js включает бегунок выбора цены-->
+			<div class="min-max-price">
+			  <div class="scale">
+                <div class="bar">
+				</div>
+              </div>
+              <div class="toggle toggle-min">
+			  </div>
+              <div class="toggle toggle-max">
+			  </div>
+	        </div>
+		    <div class="price-controls">
+	          <label class="min-price"><input name="min-price" type="text" value="0"><span> - </span></label>
+              <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+			</div>
+		  </div>
+	      
 	      <hr class="hr-catalog">
 	      <section>
 	        <h2>ПРОИЗВОДИТЕЛИ:</h2>
-		    <p><input type="checkbox" id="t1" checked> <label for="t1">BOSCH</label></p>
-	        <p><input type="checkbox" id="t2"> <label for="t2">ИНТЕРСКОЛ</label></p>
-	        <p><input type="checkbox" id="t3" checked> <label for="t3">MAKITA</label></p>
-	        <p><input type="checkbox" id="t4"> <label for="t4">DEWALT</label></p>
-	        <p><input type="checkbox" id="t5"> <label for="t5">HITACHI</label></p>
+			<ul class="plant-choice">
+		      <li><input type="checkbox" id="t1" checked> <label for="t1">BOSCH</label></li>
+	          <li><input type="checkbox" id="t2"> <label for="t2">ИНТЕРСКОЛ</label></li>
+	          <li><input type="checkbox" id="t3" checked> <label for="t3">MAKITA</label></li>
+	          <li><input type="checkbox" id="t4"> <label for="t4">DEWALT</label></li>
+	          <li><input type="checkbox" id="t5"> <label for="t5">HITACHI</label></li>
+			</ul>
 	      </section>
 	      <hr class="hr-catalog">
 	      <section>
 	        <h2>ПИТАНИЕ:</h2>
-		    <p><input type="radio" name="net" id="r1"><label for="r1">АККУМУЛЯТОРНЫЕ</label></p>
-	        <p><input type="radio" name="net" id="r2"><label for="r2">СЕТЕВЫЕ</label></p>
+			<ul class="type-choice">
+		      <li><input type="radio" name="net" id="r1"><label for="r1">АККУМУЛЯТОРНЫЕ</label></li>
+	          <li><input type="radio" name="net" id="r2"><label for="r2">СЕТЕВЫЕ</label></li>
+			</ul>
 	      </section>
 		  <button type="submit" class="check-product">Показать</button>
 	    </form>
 	  </div>
 	
 	  <div class="products">
-	    <div class="sort">
-	    <span class="sort-title-text">СОРТИРОВКА:</span>
-	      <section>
-		    <span class="sort-on-type">ПО ЦЕНЕ</span>
-		    <a class="sort-on-type" href="#">ПО ТИПУ</a>
-		    <a class="sort-on-type" href="#">ПО ФУНКЦИОНАЛУ</a>
-	      </section>
-		  <section>
-		    <a class="sort-low" href="#">low</a>
-		    <span class="sort-top">top</span>
-		  </section>
+	    <div class="sort clearfix">
+	      <span>СОРТИРОВКА:</span>
+	      <div class="sort-on-type">
+		    <span>ПО ЦЕНЕ</span>
+		    <a href="#">ПО ТИПУ</a>
+		    <a href="#">ПО ФУНКЦИОНАЛУ</a>
+	      </div>
+		  <div class="sort-on-progress">
+		    <div class="sort-top">
+		      <a href="#"></a>
+			</div>
+			<div class="sort-low">
+		      <a href="#" disabled></a>
+			</div>
+		  </div>
 	    </div>
 	  
 	    <article class="product-item-catalog">
@@ -269,8 +286,8 @@
 		
 		<div class="page-navy">
 	      <ul>
-            <li>
-              <a href="#">1</a>
+            <li class="active">
+              <span>1</span>
             </li>
             <li>
               <a href="#">2</a>
@@ -288,21 +305,19 @@
 	</div>
 	
 	<div class="text-content">
-	  <h1>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h1>
+	  <b>ПАРА СЛОВ О ПЕРФОРАТОРАХ</b>
 	  <p class="main-descr">
 	    Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в 
-		кирпиче, бетоне и камне.</p>
-	  <p class="main-descr">
+		кирпиче, бетоне и камне.<br>
 		Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции 
-		дрели, шуруповерта и отбойного молотка.</p>
-	  <p class="main-descr">
+		дрели, шуруповерта и отбойного молотка.
 		В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 	  </p>
 	</div>
 	
 	<footer class="main-footer">
 	  <div class="footer-top-line clearfix">
-	    <img src="img/logo1.jpg" width="220" height="68" alt="Техномарт">
+	    <a href="#"><img src="img/logo1.jpg" width="220" height="68" alt="Техномарт"></a>
 		<div class="footer-navigation-top">
 		    <ul>
               <li>
