@@ -89,7 +89,7 @@
 	</header>
 	
 	<div class="widget clearfix">
-	  <div class="widget-item widget-item-materials clearfix item-flag-new">
+	  <div class="widget-item widget-item-materials clearfix widget-flag-new">
 	    <div class="widget-item-text-btn">
 	      <span class="widget-item-text">Материалы</span>
 		  <div class="btn-widget-wrapper">
@@ -125,11 +125,11 @@
 	  
 	  <div class="slider">
 	    <img src="img/slider1.jpg" width="620" height="266" alt="Перфораторы">
-		<img src="img/slider2.jpg" width="620" height="266" alt="Дрели" hidden="hidden">
+		<img src="img/slider2.jpg" class="slider-disabled" width="620" height="266" alt="Дрели" hidden="hidden">
 		<span class="slider-title">ПЕРФОРАТОРЫ</span>
 		<span class="slider-text">Настоящие мужские игрушки</span>
-		<span class="slider-title" hidden="hidden">ДРЕЛИ</span>
-		<span class="slider-text" hidden="hidden">Соседям на радость</span>
+		<span class="slider-title slider-disabled">ДРЕЛИ</span>
+		<span class="slider-text slider-disabled">Соседям на радость</span>
 		<button type="button" class="sliderbtn-left"></button>
 		<button type="button" class="sliderbtn-right"></button>
 		<div class="slider-dot-left">
@@ -414,5 +414,29 @@
 		</div>
 	  </div>
 	</footer>
+	<!--модальные окна-->
+	<div class="modal-write-us">
+      <button class="modal-close" type="button" title="Закрыть" hidden="hidden"></button>
+      <form class="write-us">
+	    <div class="top-fields">
+	      <span class="write-us-title">Ваше имя:</span>
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+		  <span class="write-us-title">Ваш e-mail:</span>
+          <input type="text" name="e-mail" placeholder="Для отправки ответа">
+		</div>
+		<div class="low-field">
+		  <span class="write-us-title">Текст письма:</span>
+          <input type="text" name="letter" placeholder="В свободной форме">
+		</div>  
+      </form>
+	  <div class="submit-letter">
+		<button class="btn-write-us" type="submit">Войти</button>
+      </div>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
+	
   </body>
 </html>
